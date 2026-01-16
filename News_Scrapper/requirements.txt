@@ -1,0 +1,15 @@
+ipykernel
+feedparser
+dateparser
+pygooglenews
+pandas
+nltk
+spacy
+fuzzywuzzy
+bs4
+lxml_html_clean
+selenium
+python-Levenshtein
+newspaper3k
+goose3
+scikit-learn
