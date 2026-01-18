@@ -29,7 +29,7 @@ from datetime import timedelta as td
 from random import randint
 from time import sleep
 import random
-from config_info import *
+from News_Scrapper.config_info import *
 import requests
 from goose3 import Goose
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -85,57 +85,6 @@ def get_hotwords(text, top_n=10, min_length=4):
     return result
 
 
-
-# function to fetch articles from verified links 
-"""def fetch_article(df_news):
-   
-    article_list=[]
-    for i in df_news.to_dict(orient='records'):
-        try:
-            url=i['link']
-            source=i['source']
-            pub=source.split('//')[1]
-            article = Article(url)
-            article.download()
-            article.parse()
-            authors=article.authors
-            # atext=re.sub('(Also watch|Also read).*$','',article.text)
-            # atext=article.text
-            sleep(randint(10,60))
-            atext=fetch_article_body(url)
-            print(atext[:200])
-            atitle=i['title']
-            article.nlp()
-            hotwords = set(get_hotwords(atext))
-            keywords1 = ', '.join(sorted(hotwords))
-            words_list = keywords1.split(',')
-            selected_words = random.sample(words_list, 20)
-            keywords = ','.join(selected_words)
-            # keywords=article.keywords #finds significant keywords
-            persons=person_tagger(atext)
-            persons_cleaned=[]
-            for person in persons:
-                if len(nltk.word_tokenize(person))>1:
-                    persons_cleaned.append(person.upper())        
-            article = {'publish_date': i['published'],
-                    'publisher': regexp.match(url).group(1).upper(),
-                    'pub':pub,
-                    'title': atitle,
-                    'article': atext.replace('\n',''),
-                    'persons': persons_cleaned,
-                    'keywords': keywords,            
-                    'link': url,
-                    'source':source,
-                    'searchcriteria': i['searchcriteria']
-                    }
-            # print(article)
-            # print('-------------------------')
-            article_list.append(article)
-            # print(article_list)
-        except Exception as e:
-            pass
-    # print(article_list)
-    return article_list"""
 
 
 # function to extract location names from a text using NLP

@@ -1,4 +1,4 @@
-from functions import *
+from News_Scrapper.functions import *
 import pandas as pd
 from pygooglenews import GoogleNews
 import pandas as pd
@@ -31,7 +31,7 @@ from datetime import timedelta as td
 from random import randint
 from time import sleep
 import random
-import config_info as info
+import News_Scrapper.config_info as info
 from goose3 import Goose
 import requests
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -141,19 +141,19 @@ def extract_article_keywords(df_check):
     
 if __name__=='__main__':
 
-    #print("fetching news feed")
-    #df = fetch_news_feed(date_range, from_, to_, rss_dict)
-    #df.to_csv(f'./processing/feed_{name}.csv')
-    #df = pd.read_csv(f'./processing/feed_{name}.csv')
+    print("fetching news feed")
+    df = fetch_news_feed(date_range, from_, to_, rss_dict)
+    df.to_csv(f'./processing/feed_{name}.csv')
+    df = pd.read_csv(f'./processing/feed_{name}.csv')
 
-    #df2 = get_updated_url(df)
+    df2 = get_updated_url(df)
     # Final save after all iterations are done (if not done in real-time in loop)
-    #df2.to_csv(f'./processing/updated_feed_{name}.csv', index=False)
+    df2.to_csv(f'./processing/updated_feed_{name}.csv', index=False)
 
-    #df2 = pd.read_csv("./processing/updated_feed_April_May_2025.csv")
-    #df3 = article_content(df2)
-    #df3.to_csv(f'./processing/updated_content_feed_{name}.csv', index=False)
-    #print("Done!!")
+    df2 = pd.read_csv("./processing/updated_feed_April_May_2025.csv")
+    df3 = article_content(df2)
+    df3.to_csv(f'./processing/updated_content_feed_{name}.csv', index=False)
+    print("Done Fetching Article Content!!")
 
     df_news=pd.read_csv(f'./processing/updated_content_feed_{name}.csv')
     df_news = df_news.dropna(subset=['article_content'])
@@ -182,7 +182,7 @@ if __name__=='__main__':
 
     df_final = extract_article_keywords(df_final)
     df_final.to_csv(f'./output/final_adverse_media_{name}.csv')
-    print("Done!!")
+    print(f"Done final output saved at ./output/final_adverse_media_{name}.csv !!")
 
 
 
