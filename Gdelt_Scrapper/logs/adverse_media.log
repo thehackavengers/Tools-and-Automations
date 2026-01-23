@@ -1,0 +1,726 @@
+2026-01-22 20:36:20,711 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 20:36:48,249 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 20:39:00,933 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 20:39:00,933 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 20:40:20,351 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 20:40:20,351 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 20:42:40,531 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 20:42:40,531 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 20:42:40,545 | INFO | AdverseMediaPipeline | Keyword: racket | sleeping 0.57 minutes
+2026-01-22 20:43:16,815 | INFO | AdverseMediaPipeline | racket → fetched 143 records
+2026-01-22 20:43:16,816 | INFO | AdverseMediaPipeline | Keyword: shell company | sleeping 0.82 minutes
+2026-01-22 20:43:25,156 | INFO | AdverseMediaPipeline | shell company → fetched 2 records
+2026-01-22 20:43:25,157 | INFO | AdverseMediaPipeline | Keyword: cross-border terror funding | sleeping 0.88 minutes
+2026-01-22 20:43:31,249 | INFO | AdverseMediaPipeline | cross-border terror funding → fetched 0 records
+2026-01-22 20:43:31,249 | INFO | AdverseMediaPipeline | Keyword: arrested | sleeping 1.27 minutes
+2026-01-22 20:43:36,833 | INFO | AdverseMediaPipeline | arrested → fetched 250 records
+2026-01-22 20:43:36,834 | INFO | AdverseMediaPipeline | Keyword: anti terrorist squad | sleeping 1.23 minutes
+2026-01-22 20:43:40,120 | INFO | AdverseMediaPipeline | anti terrorist squad → fetched 3 records
+2026-01-22 20:43:40,121 | INFO | AdverseMediaPipeline | Keyword: syndicategold smuggling | sleeping 0.97 minutes
+2026-01-22 20:43:43,823 | INFO | AdverseMediaPipeline | syndicategold smuggling → fetched 0 records
+2026-01-22 20:43:43,824 | INFO | AdverseMediaPipeline | Keyword: money laundering | sleeping 0.83 minutes
+2026-01-22 20:43:57,835 | INFO | AdverseMediaPipeline | money laundering → fetched 181 records
+2026-01-22 20:43:57,836 | INFO | AdverseMediaPipeline | Keyword: sanctions evasion | sleeping 0.58 minutes
+2026-01-22 20:44:11,455 | INFO | AdverseMediaPipeline | sanctions evasion → fetched 21 records
+2026-01-22 20:44:11,456 | INFO | AdverseMediaPipeline | Keyword: investigation launched | sleeping 1.4 minutes
+2026-01-22 20:44:17,723 | INFO | AdverseMediaPipeline | investigation launched → fetched 26 records
+2026-01-22 20:44:17,724 | INFO | AdverseMediaPipeline | Keyword: gang | sleeping 0.77 minutes
+2026-01-22 20:44:23,913 | ERROR | AdverseMediaPipeline | Failed fetching keyword: gang
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 174, in _query
+    raise ValueError(
+ValueError: The query was not valid. The API error message was: The specified phrase is too short.
+2026-01-22 20:44:23,915 | INFO | AdverseMediaPipeline | Keyword: online fraud | sleeping 1.2 minutes
+2026-01-22 20:44:43,313 | INFO | AdverseMediaPipeline | online fraud → fetched 10 records
+2026-01-22 20:44:43,314 | INFO | AdverseMediaPipeline | Keyword: cyber fraud | sleeping 0.8 minutes
+2026-01-22 20:44:52,427 | INFO | AdverseMediaPipeline | cyber fraud → fetched 44 records
+2026-01-22 20:44:52,428 | INFO | AdverseMediaPipeline | Keyword: shell companies | sleeping 1.27 minutes
+2026-01-22 20:44:57,931 | INFO | AdverseMediaPipeline | shell companies → fetched 18 records
+2026-01-22 20:44:57,932 | INFO | AdverseMediaPipeline | Keyword: ponzi scheme | sleeping 1.25 minutes
+2026-01-22 20:45:14,999 | INFO | AdverseMediaPipeline | ponzi scheme → fetched 1 records
+2026-01-22 20:45:14,999 | INFO | AdverseMediaPipeline | Keyword: securities exchange board of india | sleeping 1.33 minutes
+2026-01-22 20:45:24,091 | INFO | AdverseMediaPipeline | securities exchange board of india → fetched 52 records
+2026-01-22 20:45:24,092 | INFO | AdverseMediaPipeline | Keyword: insurance fraud | sleeping 1.08 minutes
+2026-01-22 20:45:36,661 | INFO | AdverseMediaPipeline | insurance fraud → fetched 2 records
+2026-01-22 20:45:36,662 | INFO | AdverseMediaPipeline | Keyword: fraud | sleeping 0.68 minutes
+2026-01-22 20:45:49,528 | INFO | AdverseMediaPipeline | fraud → fetched 250 records
+2026-01-22 20:45:49,528 | INFO | AdverseMediaPipeline | Keyword: member of parliament | sleeping 0.83 minutes
+2026-01-22 20:46:11,579 | INFO | AdverseMediaPipeline | member of parliament → fetched 67 records
+2026-01-22 20:46:11,580 | INFO | AdverseMediaPipeline | Keyword: charity misuse | sleeping 0.85 minutes
+2026-01-22 20:46:16,556 | INFO | AdverseMediaPipeline | charity misuse → fetched 0 records
+2026-01-22 20:46:16,557 | INFO | AdverseMediaPipeline | Keyword: anti terror unit | sleeping 0.5 minutes
+2026-01-22 20:46:26,734 | INFO | AdverseMediaPipeline | anti terror unit → fetched 0 records
+2026-01-22 20:46:26,735 | INFO | AdverseMediaPipeline | Keyword: enforcement directorate | sleeping 0.55 minutes
+2026-01-22 20:46:32,429 | INFO | AdverseMediaPipeline | enforcement directorate → fetched 126 records
+2026-01-22 20:46:32,429 | INFO | AdverseMediaPipeline | Keyword: reserve bank of india | sleeping 0.65 minutes
+2026-01-22 20:46:38,397 | INFO | AdverseMediaPipeline | reserve bank of india → fetched 224 records
+2026-01-22 20:46:38,398 | INFO | AdverseMediaPipeline | Keyword: benami transactions | sleeping 0.7 minutes
+2026-01-22 20:46:47,261 | INFO | AdverseMediaPipeline | benami transactions → fetched 2 records
+2026-01-22 20:46:47,262 | INFO | AdverseMediaPipeline | Keyword: fatf black list | sleeping 1.15 minutes
+2026-01-22 20:46:54,639 | INFO | AdverseMediaPipeline | fatf black list → fetched 2 records
+2026-01-22 20:46:54,640 | INFO | AdverseMediaPipeline | Keyword: mixer | sleeping 1.12 minutes
+2026-01-22 20:47:04,329 | INFO | AdverseMediaPipeline | mixer → fetched 7 records
+2026-01-22 20:47:04,330 | INFO | AdverseMediaPipeline | Keyword: illegal mining | sleeping 1.25 minutes
+2026-01-22 20:47:16,898 | INFO | AdverseMediaPipeline | illegal mining → fetched 48 records
+2026-01-22 20:47:16,899 | INFO | AdverseMediaPipeline | Keyword: monero | sleeping 0.62 minutes
+2026-01-22 20:47:21,660 | INFO | AdverseMediaPipeline | monero → fetched 0 records
+2026-01-22 20:47:21,661 | INFO | AdverseMediaPipeline | Keyword: wildlife trafficking | sleeping 1.3 minutes
+2026-01-22 20:47:30,287 | INFO | AdverseMediaPipeline | wildlife trafficking → fetched 1 records
+2026-01-22 20:47:30,287 | INFO | AdverseMediaPipeline | Keyword: political donations | sleeping 0.87 minutes
+2026-01-22 20:47:32,940 | INFO | AdverseMediaPipeline | political donations → fetched 5 records
+2026-01-22 20:47:32,941 | INFO | AdverseMediaPipeline | Keyword: pyramid scheme | sleeping 0.77 minutes
+2026-01-22 20:47:57,225 | INFO | AdverseMediaPipeline | pyramid scheme → fetched 3 records
+2026-01-22 20:47:57,226 | INFO | AdverseMediaPipeline | Keyword: counterfeit currency | sleeping 1.47 minutes
+2026-01-22 20:48:01,647 | INFO | AdverseMediaPipeline | counterfeit currency → fetched 7 records
+2026-01-22 20:48:01,647 | INFO | AdverseMediaPipeline | Keyword: sanctions list | sleeping 0.83 minutes
+2026-01-22 20:48:12,217 | INFO | AdverseMediaPipeline | sanctions list → fetched 8 records
+2026-01-22 20:48:12,218 | INFO | AdverseMediaPipeline | Keyword: sanctioned entity | sleeping 0.5 minutes
+2026-01-22 20:48:25,663 | INFO | AdverseMediaPipeline | sanctioned entity → fetched 1 records
+2026-01-22 20:48:25,664 | INFO | AdverseMediaPipeline | Keyword: penalty insurance regulatory and development authority | sleeping 1.02 minutes
+2026-01-22 20:48:53,097 | INFO | AdverseMediaPipeline | penalty insurance regulatory and development authority → fetched 0 records
+2026-01-22 20:48:53,098 | INFO | AdverseMediaPipeline | Keyword: minister | sleeping 0.57 minutes
+2026-01-22 20:49:16,336 | INFO | AdverseMediaPipeline | minister → fetched 250 records
+2026-01-22 20:49:16,336 | INFO | AdverseMediaPipeline | Keyword: black marketing | sleeping 0.88 minutes
+2026-01-22 20:49:33,882 | INFO | AdverseMediaPipeline | black marketing → fetched 2 records
+2026-01-22 20:49:33,882 | INFO | AdverseMediaPipeline | Keyword: kashmir separatist | sleeping 0.6 minutes
+2026-01-22 20:49:50,384 | INFO | AdverseMediaPipeline | kashmir separatist → fetched 0 records
+2026-01-22 20:49:50,384 | INFO | AdverseMediaPipeline | Keyword: trafficking | sleeping 0.93 minutes
+2026-01-22 20:50:14,806 | INFO | AdverseMediaPipeline | trafficking → fetched 225 records
+2026-01-22 20:50:14,806 | INFO | AdverseMediaPipeline | Keyword: underworld | sleeping 1.08 minutes
+2026-01-22 20:50:30,117 | INFO | AdverseMediaPipeline | underworld → fetched 37 records
+2026-01-22 20:50:30,118 | INFO | AdverseMediaPipeline | Keyword: black money | sleeping 1.28 minutes
+2026-01-22 20:50:35,395 | INFO | AdverseMediaPipeline | black money → fetched 20 records
+2026-01-22 20:50:35,396 | INFO | AdverseMediaPipeline | Keyword: abuse of office | sleeping 1.32 minutes
+2026-01-22 20:50:53,953 | INFO | AdverseMediaPipeline | abuse of office → fetched 1 records
+2026-01-22 20:50:53,954 | INFO | AdverseMediaPipeline | Keyword: poaching | sleeping 0.8 minutes
+2026-01-22 20:51:02,475 | INFO | AdverseMediaPipeline | poaching → fetched 19 records
+2026-01-22 20:51:02,476 | INFO | AdverseMediaPipeline | Keyword: cross-border remittance | sleeping 1.18 minutes
+2026-01-22 20:51:13,245 | INFO | AdverseMediaPipeline | cross-border remittance → fetched 0 records
+2026-01-22 20:51:13,246 | INFO | AdverseMediaPipeline | Keyword: bribe | sleeping 1.07 minutes
+2026-01-22 20:51:25,965 | INFO | AdverseMediaPipeline | bribe → fetched 108 records
+2026-01-22 20:51:25,966 | INFO | AdverseMediaPipeline | Keyword: tax evasion | sleeping 0.93 minutes
+2026-01-22 20:51:37,853 | INFO | AdverseMediaPipeline | tax evasion → fetched 29 records
+2026-01-22 20:51:37,854 | INFO | AdverseMediaPipeline | Keyword: duped | sleeping 1.13 minutes
+2026-01-22 20:51:49,879 | INFO | AdverseMediaPipeline | duped → fetched 77 records
+2026-01-22 20:51:49,880 | INFO | AdverseMediaPipeline | Keyword: cybercrime | sleeping 1.12 minutes
+2026-01-22 20:52:06,377 | INFO | AdverseMediaPipeline | cybercrime → fetched 87 records
+2026-01-22 20:52:06,378 | INFO | AdverseMediaPipeline | Keyword: assets seized | sleeping 1.23 minutes
+2026-01-22 20:52:13,049 | INFO | AdverseMediaPipeline | assets seized → fetched 1 records
+2026-01-22 20:52:13,050 | INFO | AdverseMediaPipeline | Keyword: fatf grey list | sleeping 0.65 minutes
+2026-01-22 20:52:24,236 | INFO | AdverseMediaPipeline | fatf grey list → fetched 38 records
+2026-01-22 20:52:24,237 | INFO | AdverseMediaPipeline | Keyword: bureaucrat | sleeping 1.15 minutes
+2026-01-22 20:52:34,148 | INFO | AdverseMediaPipeline | bureaucrat → fetched 30 records
+2026-01-22 20:52:34,149 | INFO | AdverseMediaPipeline | Keyword: kidnap | sleeping 0.82 minutes
+2026-01-22 20:52:40,558 | INFO | AdverseMediaPipeline | kidnap → fetched 18 records
+2026-01-22 20:52:40,559 | INFO | AdverseMediaPipeline | Keyword: organized crime | sleeping 1.32 minutes
+2026-01-22 20:52:51,527 | INFO | AdverseMediaPipeline | organized crime → fetched 19 records
+2026-01-22 20:52:51,528 | INFO | AdverseMediaPipeline | Keyword: corruption | sleeping 0.63 minutes
+2026-01-22 20:53:01,679 | INFO | AdverseMediaPipeline | corruption → fetched 250 records
+2026-01-22 20:53:01,680 | INFO | AdverseMediaPipeline | Keyword: crypto | sleeping 0.57 minutes
+2026-01-22 20:53:30,228 | INFO | AdverseMediaPipeline | crypto → fetched 81 records
+2026-01-22 20:53:30,228 | INFO | AdverseMediaPipeline | Keyword: input tax credit fraud | sleeping 0.7 minutes
+2026-01-22 20:53:36,536 | INFO | AdverseMediaPipeline | input tax credit fraud → fetched 0 records
+2026-01-22 20:53:36,537 | INFO | AdverseMediaPipeline | Keyword: bank fraud | sleeping 1.12 minutes
+2026-01-22 20:53:45,669 | INFO | AdverseMediaPipeline | bank fraud → fetched 21 records
+2026-01-22 20:53:45,670 | INFO | AdverseMediaPipeline | Keyword: income tax department | sleeping 0.73 minutes
+2026-01-22 20:53:55,887 | INFO | AdverseMediaPipeline | income tax department → fetched 54 records
+2026-01-22 20:53:55,888 | INFO | AdverseMediaPipeline | Keyword: property seizuremisinvoicing | sleeping 0.85 minutes
+2026-01-22 20:54:11,300 | INFO | AdverseMediaPipeline | property seizuremisinvoicing → fetched 0 records
+2026-01-22 20:54:11,301 | INFO | AdverseMediaPipeline | Keyword: over-invoicing | sleeping 1.2 minutes
+2026-01-22 20:54:15,807 | INFO | AdverseMediaPipeline | over-invoicing → fetched 0 records
+2026-01-22 20:54:15,808 | INFO | AdverseMediaPipeline | Keyword: aml non-compliance | sleeping 0.87 minutes
+2026-01-22 20:54:22,327 | INFO | AdverseMediaPipeline | aml non-compliance → fetched 0 records
+2026-01-22 20:54:22,327 | INFO | AdverseMediaPipeline | Keyword: cash transaction | sleeping 0.72 minutes
+2026-01-22 20:54:30,235 | INFO | AdverseMediaPipeline | cash transaction → fetched 2 records
+2026-01-22 20:54:30,236 | INFO | AdverseMediaPipeline | Keyword: hawala | sleeping 0.88 minutes
+2026-01-22 20:54:44,994 | INFO | AdverseMediaPipeline | hawala → fetched 42 records
+2026-01-22 20:54:44,995 | INFO | AdverseMediaPipeline | Keyword: arms embargo | sleeping 1.43 minutes
+2026-01-22 20:54:56,410 | INFO | AdverseMediaPipeline | arms embargo → fetched 18 records
+2026-01-22 20:54:56,410 | INFO | AdverseMediaPipeline | Keyword: real estate laundering | sleeping 0.82 minutes
+2026-01-22 20:55:21,956 | INFO | AdverseMediaPipeline | real estate laundering → fetched 0 records
+2026-01-22 20:55:21,957 | INFO | AdverseMediaPipeline | Keyword: robbery | sleeping 1.0 minutes
+2026-01-22 20:55:37,612 | INFO | AdverseMediaPipeline | robbery → fetched 88 records
+2026-01-22 20:55:37,613 | INFO | AdverseMediaPipeline | Keyword: deepfake fraud | sleeping 0.57 minutes
+2026-01-22 20:55:42,464 | INFO | AdverseMediaPipeline | deepfake fraud → fetched 1 records
+2026-01-22 20:55:42,465 | INFO | AdverseMediaPipeline | Keyword: visa overstaying | sleeping 0.78 minutes
+2026-01-22 20:55:47,000 | INFO | AdverseMediaPipeline | visa overstaying → fetched 0 records
+2026-01-22 20:55:47,000 | INFO | AdverseMediaPipeline | Keyword: round-tripping | sleeping 1.08 minutes
+2026-01-22 20:55:53,518 | INFO | AdverseMediaPipeline | round-tripping → fetched 5 records
+2026-01-22 20:55:53,519 | INFO | AdverseMediaPipeline | Keyword: narcotics control bureau | sleeping 1.35 minutes
+2026-01-22 20:56:06,540 | INFO | AdverseMediaPipeline | narcotics control bureau → fetched 13 records
+2026-01-22 20:56:06,541 | INFO | AdverseMediaPipeline | Keyword: layering | sleeping 0.87 minutes
+2026-01-22 20:56:20,326 | INFO | AdverseMediaPipeline | layering → fetched 9 records
+2026-01-22 20:56:20,326 | INFO | AdverseMediaPipeline | Keyword: under-invoicing | sleeping 0.5 minutes
+2026-01-22 20:56:30,246 | INFO | AdverseMediaPipeline | under-invoicing → fetched 0 records
+2026-01-22 20:56:30,247 | INFO | AdverseMediaPipeline | Keyword: dark web | sleeping 1.13 minutes
+2026-01-22 20:56:49,612 | INFO | AdverseMediaPipeline | dark web → fetched 6 records
+2026-01-22 20:56:49,613 | INFO | AdverseMediaPipeline | Keyword: accounts frozen | sleeping 0.97 minutes
+2026-01-22 20:57:08,142 | INFO | AdverseMediaPipeline | accounts frozen → fetched 6 records
+2026-01-22 20:57:08,143 | INFO | AdverseMediaPipeline | Keyword: integration | sleeping 1.47 minutes
+2026-01-22 20:57:20,289 | INFO | AdverseMediaPipeline | integration → fetched 130 records
+2026-01-22 20:57:20,290 | INFO | AdverseMediaPipeline | Keyword: lawmaker | sleeping 1.45 minutes
+2026-01-22 20:57:27,576 | INFO | AdverseMediaPipeline | lawmaker → fetched 75 records
+2026-01-22 20:57:27,577 | INFO | AdverseMediaPipeline | Keyword: politically exposed person | sleeping 1.12 minutes
+2026-01-22 20:57:43,791 | INFO | AdverseMediaPipeline | politically exposed person → fetched 3 records
+2026-01-22 20:57:43,792 | INFO | AdverseMediaPipeline | Keyword: goods and service tax | sleeping 1.02 minutes
+2026-01-22 20:57:48,933 | INFO | AdverseMediaPipeline | goods and service tax → fetched 10 records
+2026-01-22 20:57:48,934 | INFO | AdverseMediaPipeline | Keyword: smuggle | sleeping 0.87 minutes
+2026-01-22 20:57:53,908 | INFO | AdverseMediaPipeline | smuggle → fetched 42 records
+2026-01-22 20:57:53,909 | INFO | AdverseMediaPipeline | Keyword: trade-based money laundering | sleeping 0.78 minutes
+2026-01-22 20:58:05,110 | INFO | AdverseMediaPipeline | trade-based money laundering → fetched 1 records
+2026-01-22 20:58:05,110 | INFO | AdverseMediaPipeline | Keyword: modern slavery | sleeping 1.45 minutes
+2026-01-22 20:58:09,930 | INFO | AdverseMediaPipeline | modern slavery → fetched 2 records
+2026-01-22 20:58:09,931 | INFO | AdverseMediaPipeline | Keyword: pump and dump | sleeping 0.82 minutes
+2026-01-22 20:58:12,350 | INFO | AdverseMediaPipeline | pump and dump → fetched 0 records
+2026-01-22 20:58:12,351 | INFO | AdverseMediaPipeline | Keyword: extortion | sleeping 1.12 minutes
+2026-01-22 20:58:19,764 | INFO | AdverseMediaPipeline | extortion → fetched 125 records
+2026-01-22 20:58:19,764 | INFO | AdverseMediaPipeline | Keyword: suspicious transaction | sleeping 0.72 minutes
+2026-01-22 20:58:30,131 | INFO | AdverseMediaPipeline | suspicious transaction → fetched 0 records
+2026-01-22 20:58:30,133 | INFO | AdverseMediaPipeline | Keyword: police special cell | sleeping 0.72 minutes
+2026-01-22 20:58:37,794 | INFO | AdverseMediaPipeline | police special cell → fetched 15 records
+2026-01-22 20:58:37,794 | INFO | AdverseMediaPipeline | Keyword: drug trafficking | sleeping 0.82 minutes
+2026-01-22 20:58:41,900 | INFO | AdverseMediaPipeline | drug trafficking → fetched 54 records
+2026-01-22 20:58:41,901 | INFO | AdverseMediaPipeline | Keyword: bribery | sleeping 0.8 minutes
+2026-01-22 20:58:50,392 | INFO | AdverseMediaPipeline | bribery → fetched 40 records
+2026-01-22 20:58:50,392 | INFO | AdverseMediaPipeline | Keyword: kyc violation | sleeping 0.87 minutes
+2026-01-22 20:59:01,458 | INFO | AdverseMediaPipeline | kyc violation → fetched 0 records
+2026-01-22 20:59:01,458 | INFO | AdverseMediaPipeline | Keyword: high-risk country | sleeping 0.87 minutes
+2026-01-22 20:59:05,158 | INFO | AdverseMediaPipeline | high-risk country → fetched 0 records
+2026-01-22 20:59:05,159 | INFO | AdverseMediaPipeline | Keyword: cryptocurrency laundering | sleeping 1.18 minutes
+2026-01-22 20:59:10,573 | INFO | AdverseMediaPipeline | cryptocurrency laundering → fetched 0 records
+2026-01-22 20:59:10,574 | INFO | AdverseMediaPipeline | Keyword: cheating | sleeping 1.42 minutes
+2026-01-22 20:59:27,914 | INFO | AdverseMediaPipeline | cheating → fetched 161 records
+2026-01-22 20:59:27,915 | INFO | AdverseMediaPipeline | Keyword: rug pull | sleeping 0.73 minutes
+2026-01-22 20:59:35,139 | INFO | AdverseMediaPipeline | rug pull → fetched 0 records
+2026-01-22 20:59:35,140 | INFO | AdverseMediaPipeline | Keyword: national investigation agency | sleeping 0.58 minutes
+2026-01-22 20:59:40,314 | INFO | AdverseMediaPipeline | national investigation agency → fetched 130 records
+2026-01-22 20:59:40,314 | INFO | AdverseMediaPipeline | Keyword: financial fraud | sleeping 1.38 minutes
+2026-01-22 20:59:48,058 | INFO | AdverseMediaPipeline | financial fraud → fetched 41 records
+2026-01-22 20:59:48,059 | INFO | AdverseMediaPipeline | Keyword: cbi probe | sleeping 1.07 minutes
+2026-01-22 20:59:56,597 | INFO | AdverseMediaPipeline | cbi probe → fetched 68 records
+2026-01-22 20:59:56,598 | INFO | AdverseMediaPipeline | Keyword: phishing | sleeping 1.2 minutes
+2026-01-22 21:00:01,678 | INFO | AdverseMediaPipeline | phishing → fetched 33 records
+2026-01-22 21:00:01,679 | INFO | AdverseMediaPipeline | Keyword: directorate of revenue intelligence | sleeping 0.58 minutes
+2026-01-22 21:00:30,274 | INFO | AdverseMediaPipeline | directorate of revenue intelligence → fetched 20 records
+2026-01-22 21:00:30,275 | INFO | AdverseMediaPipeline | Keyword: offshore accounts | sleeping 1.05 minutes
+2026-01-22 21:00:33,787 | INFO | AdverseMediaPipeline | offshore accounts → fetched 0 records
+2026-01-22 21:00:33,788 | INFO | AdverseMediaPipeline | Keyword: terrorist financing | sleeping 0.85 minutes
+2026-01-22 21:00:46,463 | INFO | AdverseMediaPipeline | terrorist financing → fetched 8 records
+2026-01-22 21:00:46,464 | INFO | AdverseMediaPipeline | Keyword: illegal conversion | sleeping 0.9 minutes
+2026-01-22 21:01:11,264 | INFO | AdverseMediaPipeline | illegal conversion → fetched 0 records
+2026-01-22 21:01:11,265 | INFO | AdverseMediaPipeline | Keyword: forge | sleeping 1.1 minutes
+2026-01-22 21:01:29,574 | INFO | AdverseMediaPipeline | forge → fetched 23 records
+2026-01-22 21:01:29,574 | INFO | AdverseMediaPipeline | Keyword: privacy coins | sleeping 1.27 minutes
+2026-01-22 21:01:37,652 | INFO | AdverseMediaPipeline | privacy coins → fetched 0 records
+2026-01-22 21:01:37,653 | INFO | AdverseMediaPipeline | Keyword: terror funding | sleeping 0.67 minutes
+2026-01-22 21:01:42,348 | INFO | AdverseMediaPipeline | terror funding → fetched 11 records
+2026-01-22 21:01:42,349 | INFO | AdverseMediaPipeline | Keyword: human trafficking | sleeping 1.33 minutes
+2026-01-22 21:01:49,938 | INFO | AdverseMediaPipeline | human trafficking → fetched 29 records
+2026-01-22 21:01:49,939 | INFO | AdverseMediaPipeline | Keyword: cryptocurrency | sleeping 1.35 minutes
+2026-01-22 21:01:54,793 | INFO | AdverseMediaPipeline | cryptocurrency → fetched 71 records
+2026-01-22 21:01:54,794 | INFO | AdverseMediaPipeline | Keyword: economic sanctions | sleeping 1.08 minutes
+2026-01-22 21:02:03,966 | INFO | AdverseMediaPipeline | economic sanctions → fetched 27 records
+2026-01-22 21:02:03,967 | INFO | AdverseMediaPipeline | Keyword: cyber police | sleeping 1.23 minutes
+2026-01-22 21:02:17,452 | INFO | AdverseMediaPipeline | cyber police → fetched 43 records
+2026-01-22 21:02:17,453 | INFO | AdverseMediaPipeline | Keyword: scam | sleeping 1.1 minutes
+2026-01-22 21:02:22,826 | ERROR | AdverseMediaPipeline | Failed fetching keyword: scam
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 174, in _query
+    raise ValueError(
+ValueError: The query was not valid. The API error message was: The specified phrase is too short.
+2026-01-22 21:02:22,828 | INFO | AdverseMediaPipeline | Keyword: mafia | sleeping 0.85 minutes
+2026-01-22 21:02:37,557 | INFO | AdverseMediaPipeline | mafia → fetched 81 records
+2026-01-22 21:02:37,558 | INFO | AdverseMediaPipeline | Keyword: asset freeze | sleeping 0.97 minutes
+2026-01-22 21:02:48,539 | INFO | AdverseMediaPipeline | asset freeze → fetched 7 records
+2026-01-22 21:02:48,539 | INFO | AdverseMediaPipeline | Keyword: central bureau of investigation | sleeping 0.75 minutes
+2026-01-22 21:03:04,515 | INFO | AdverseMediaPipeline | central bureau of investigation → fetched 163 records
+2026-01-22 21:03:04,516 | INFO | AdverseMediaPipeline | Keyword: identity theft | sleeping 0.78 minutes
+2026-01-22 21:03:11,303 | INFO | AdverseMediaPipeline | identity theft → fetched 17 records
+2026-01-22 21:03:11,304 | INFO | AdverseMediaPipeline | Keyword: placement | sleeping 1.07 minutes
+2026-01-22 21:03:16,797 | INFO | AdverseMediaPipeline | placement → fetched 40 records
+2026-01-22 21:03:16,798 | INFO | AdverseMediaPipeline | Keyword: denied persons list | sleeping 0.83 minutes
+2026-01-22 21:03:26,420 | INFO | AdverseMediaPipeline | denied persons list → fetched 0 records
+2026-01-22 21:03:26,421 | INFO | AdverseMediaPipeline | Keyword: insider trading | sleeping 1.12 minutes
+2026-01-22 21:03:29,274 | INFO | AdverseMediaPipeline | insider trading → fetched 17 records
+2026-01-22 21:03:29,275 | INFO | AdverseMediaPipeline | Keyword: front organizations | sleeping 1.22 minutes
+2026-01-22 21:03:33,797 | INFO | AdverseMediaPipeline | front organizations → fetched 0 records
+2026-01-22 21:03:33,797 | INFO | AdverseMediaPipeline | Keyword: luxury asset purchase | sleeping 1.5 minutes
+2026-01-22 21:03:45,471 | INFO | AdverseMediaPipeline | luxury asset purchase → fetched 0 records
+2026-01-22 21:03:45,472 | INFO | AdverseMediaPipeline | Keyword: ransomware | sleeping 0.98 minutes
+2026-01-22 21:03:56,008 | INFO | AdverseMediaPipeline | ransomware → fetched 12 records
+2026-01-22 21:03:56,009 | INFO | AdverseMediaPipeline | Keyword: market manipulation | sleeping 0.55 minutes
+2026-01-22 21:04:02,004 | INFO | AdverseMediaPipeline | market manipulation → fetched 2 records
+2026-01-22 21:04:02,005 | INFO | AdverseMediaPipeline | Keyword: panama papers | sleeping 0.7 minutes
+2026-01-22 21:04:30,308 | INFO | AdverseMediaPipeline | panama papers → fetched 2 records
+2026-01-22 21:04:30,308 | INFO | AdverseMediaPipeline | Keyword: fake currency | sleeping 0.65 minutes
+2026-01-22 21:04:33,915 | INFO | AdverseMediaPipeline | fake currency → fetched 7 records
+2026-01-22 21:04:33,916 | INFO | AdverseMediaPipeline | Keyword: kickbacks | sleeping 0.67 minutes
+2026-01-22 21:04:39,933 | INFO | AdverseMediaPipeline | kickbacks → fetched 7 records
+2026-01-22 21:04:39,934 | INFO | AdverseMediaPipeline | Keyword: underinvoicing | sleeping 0.58 minutes
+2026-01-22 21:04:45,952 | INFO | AdverseMediaPipeline | underinvoicing → fetched 0 records
+2026-01-22 21:04:45,953 | INFO | AdverseMediaPipeline | Article fetching completed
+2026-01-22 21:09:37,890 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 21:09:37,890 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 21:09:37,899 | INFO | AdverseMediaPipeline | Keyword: cyber fraud | sleeping 1.37 minutes
+2026-01-22 21:09:59,240 | INFO | AdverseMediaPipeline | cyber fraud → fetched 44 records
+2026-01-22 21:09:59,241 | INFO | AdverseMediaPipeline | Keyword: over-invoicing | sleeping 0.73 minutes
+2026-01-22 21:10:15,250 | INFO | AdverseMediaPipeline | over-invoicing → fetched 0 records
+2026-01-22 21:10:15,251 | INFO | AdverseMediaPipeline | Keyword: extortion | sleeping 1.3 minutes
+2026-01-22 21:14:29,007 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 21:14:29,007 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 21:14:29,016 | INFO | AdverseMediaPipeline | Keyword: kickbacks | sleeping 1.05 minutes
+2026-01-22 21:14:37,642 | INFO | AdverseMediaPipeline | kickbacks → fetched 7 records
+2026-01-22 21:14:37,643 | INFO | AdverseMediaPipeline | Keyword: fatf grey list | sleeping 1.0 minutes
+2026-01-22 21:14:40,715 | INFO | AdverseMediaPipeline | fatf grey list → fetched 38 records
+2026-01-22 21:14:40,716 | INFO | AdverseMediaPipeline | Keyword: corruption | sleeping 0.95 minutes
+2026-01-22 21:14:48,120 | INFO | AdverseMediaPipeline | corruption → fetched 250 records
+2026-01-22 21:14:48,121 | INFO | AdverseMediaPipeline | Keyword: fatf black list | sleeping 0.5 minutes
+2026-01-22 21:14:51,533 | INFO | AdverseMediaPipeline | fatf black list → fetched 2 records
+2026-01-22 21:14:51,534 | INFO | AdverseMediaPipeline | Keyword: over-invoicing | sleeping 0.6 minutes
+2026-01-22 21:15:02,097 | INFO | AdverseMediaPipeline | over-invoicing → fetched 0 records
+2026-01-22 21:15:02,098 | INFO | AdverseMediaPipeline | Keyword: cash transaction | sleeping 0.83 minutes
+2026-01-22 21:15:19,862 | INFO | AdverseMediaPipeline | cash transaction → fetched 2 records
+2026-01-22 21:15:19,863 | INFO | AdverseMediaPipeline | Keyword: kashmir separatist | sleeping 1.23 minutes
+2026-01-22 21:15:26,804 | INFO | AdverseMediaPipeline | kashmir separatist → fetched 0 records
+2026-01-22 21:15:26,805 | INFO | AdverseMediaPipeline | Keyword: black money | sleeping 1.32 minutes
+2026-01-22 21:15:37,648 | INFO | AdverseMediaPipeline | black money → fetched 20 records
+2026-01-22 21:15:37,648 | INFO | AdverseMediaPipeline | Keyword: high-risk country | sleeping 1.07 minutes
+2026-01-22 21:15:43,737 | INFO | AdverseMediaPipeline | high-risk country → fetched 0 records
+2026-01-22 21:15:43,737 | INFO | AdverseMediaPipeline | Keyword: luxury asset purchase | sleeping 0.55 minutes
+2026-01-22 21:15:46,939 | INFO | AdverseMediaPipeline | luxury asset purchase → fetched 0 records
+2026-01-22 21:15:46,940 | INFO | AdverseMediaPipeline | Keyword: narcotics control bureau | sleeping 0.95 minutes
+2026-01-22 21:16:11,961 | INFO | AdverseMediaPipeline | narcotics control bureau → fetched 13 records
+2026-01-22 21:16:11,962 | INFO | AdverseMediaPipeline | Keyword: cheating | sleeping 0.63 minutes
+2026-01-22 21:16:23,672 | INFO | AdverseMediaPipeline | cheating → fetched 161 records
+2026-01-22 21:16:23,672 | INFO | AdverseMediaPipeline | Keyword: cbi probe | sleeping 1.07 minutes
+2026-01-22 21:16:34,483 | INFO | AdverseMediaPipeline | cbi probe → fetched 68 records
+2026-01-22 21:16:34,483 | INFO | AdverseMediaPipeline | Keyword: integration | sleeping 1.47 minutes
+2026-01-22 21:17:05,916 | INFO | AdverseMediaPipeline | integration → fetched 130 records
+2026-01-22 21:17:05,916 | INFO | AdverseMediaPipeline | Keyword: panama papers | sleeping 0.8 minutes
+2026-01-22 21:28:11,914 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 21:28:11,915 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 21:28:11,924 | INFO | AdverseMediaPipeline | Keyword: forge | sleeping 0.73 minutes
+2026-01-22 21:28:17,716 | INFO | AdverseMediaPipeline | forge → fetched 23 records
+2026-01-22 21:28:17,716 | INFO | AdverseMediaPipeline | Keyword: sanctions evasion | sleeping 0.6 minutes
+2026-01-22 21:28:22,580 | INFO | AdverseMediaPipeline | sanctions evasion → fetched 21 records
+2026-01-22 21:28:22,581 | INFO | AdverseMediaPipeline | Keyword: black marketing | sleeping 0.68 minutes
+2026-01-22 21:28:29,851 | INFO | AdverseMediaPipeline | black marketing → fetched 2 records
+2026-01-22 21:28:29,852 | INFO | AdverseMediaPipeline | Keyword: underworld | sleeping 0.53 minutes
+2026-01-22 21:28:36,174 | INFO | AdverseMediaPipeline | underworld → fetched 37 records
+2026-01-22 21:28:36,175 | INFO | AdverseMediaPipeline | Keyword: pyramid scheme | sleeping 0.57 minutes
+2026-01-22 21:28:51,304 | INFO | AdverseMediaPipeline | pyramid scheme → fetched 3 records
+2026-01-22 21:28:51,305 | INFO | AdverseMediaPipeline | Keyword: arrested | sleeping 0.78 minutes
+2026-01-22 21:29:07,116 | INFO | AdverseMediaPipeline | arrested → fetched 250 records
+2026-01-22 21:29:07,117 | INFO | AdverseMediaPipeline | Keyword: cheating | sleeping 0.65 minutes
+2026-01-22 21:29:14,585 | INFO | AdverseMediaPipeline | cheating → fetched 161 records
+2026-01-22 21:29:14,586 | INFO | AdverseMediaPipeline | Keyword: cyber police | sleeping 0.78 minutes
+2026-01-22 21:29:30,276 | INFO | AdverseMediaPipeline | cyber police → fetched 43 records
+2026-01-22 21:29:30,277 | INFO | AdverseMediaPipeline | Keyword: syndicategold smuggling | sleeping 1.13 minutes
+2026-01-22 21:29:37,643 | INFO | AdverseMediaPipeline | syndicategold smuggling → fetched 0 records
+2026-01-22 21:29:37,644 | INFO | AdverseMediaPipeline | Keyword: identity theft | sleeping 0.55 minutes
+2026-01-22 21:29:40,776 | INFO | AdverseMediaPipeline | identity theft → fetched 17 records
+2026-01-22 21:29:40,777 | INFO | AdverseMediaPipeline | Keyword: financial fraud | sleeping 0.85 minutes
+2026-01-22 21:29:52,495 | INFO | AdverseMediaPipeline | financial fraud → fetched 41 records
+2026-01-22 21:29:52,495 | INFO | AdverseMediaPipeline | Keyword: hawala | sleeping 0.77 minutes
+2026-01-22 21:30:06,133 | INFO | AdverseMediaPipeline | hawala → fetched 42 records
+2026-01-22 21:30:06,134 | INFO | AdverseMediaPipeline | Keyword: directorate of revenue intelligence | sleeping 1.43 minutes
+2026-01-22 21:30:27,633 | INFO | AdverseMediaPipeline | directorate of revenue intelligence → fetched 20 records
+2026-01-22 21:30:27,634 | INFO | AdverseMediaPipeline | Keyword: human trafficking | sleeping 0.72 minutes
+2026-01-22 21:30:45,287 | INFO | AdverseMediaPipeline | human trafficking → fetched 29 records
+2026-01-22 21:30:45,288 | INFO | AdverseMediaPipeline | Keyword: dark web | sleeping 0.92 minutes
+2026-01-22 21:31:02,407 | INFO | AdverseMediaPipeline | dark web → fetched 6 records
+2026-01-22 21:31:02,407 | INFO | AdverseMediaPipeline | Keyword: trade-based money laundering | sleeping 1.27 minutes
+2026-01-22 21:31:07,038 | ERROR | AdverseMediaPipeline | Failed fetching keyword: trade-based money laundering
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 167, in _query
+    raise_response_error(response=response)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/errors.py", line 44, in raise_response_error
+    raise RateLimitError(response=response)
+gdeltdoc.errors.RateLimitError
+2026-01-22 21:31:07,043 | INFO | AdverseMediaPipeline | Keyword: aml non-compliance | sleeping 1.4 minutes
+2026-01-22 21:31:21,656 | INFO | AdverseMediaPipeline | aml non-compliance → fetched 0 records
+2026-01-22 21:31:21,656 | INFO | AdverseMediaPipeline | Keyword: kashmir separatist | sleeping 0.87 minutes
+2026-01-22 21:31:28,026 | INFO | AdverseMediaPipeline | kashmir separatist → fetched 0 records
+2026-01-22 21:31:28,027 | INFO | AdverseMediaPipeline | Keyword: charity misuse | sleeping 1.13 minutes
+2026-01-22 21:31:37,654 | INFO | AdverseMediaPipeline | charity misuse → fetched 0 records
+2026-01-22 21:31:37,655 | INFO | AdverseMediaPipeline | Keyword: cash transaction | sleeping 1.2 minutes
+2026-01-22 21:31:46,368 | INFO | AdverseMediaPipeline | cash transaction → fetched 2 records
+2026-01-22 21:31:46,368 | INFO | AdverseMediaPipeline | Keyword: real estate laundering | sleeping 0.75 minutes
+2026-01-22 21:32:09,196 | INFO | AdverseMediaPipeline | real estate laundering → fetched 0 records
+2026-01-22 21:32:09,197 | INFO | AdverseMediaPipeline | Keyword: over-invoicing | sleeping 0.75 minutes
+2026-01-22 21:32:18,397 | INFO | AdverseMediaPipeline | over-invoicing → fetched 0 records
+2026-01-22 21:32:18,398 | INFO | AdverseMediaPipeline | Keyword: police special cell | sleeping 0.92 minutes
+2026-01-22 21:32:22,800 | INFO | AdverseMediaPipeline | police special cell → fetched 15 records
+2026-01-22 21:32:22,801 | INFO | AdverseMediaPipeline | Keyword: economic sanctions | sleeping 0.73 minutes
+2026-01-22 21:32:30,289 | INFO | AdverseMediaPipeline | economic sanctions → fetched 27 records
+2026-01-22 21:32:30,290 | INFO | AdverseMediaPipeline | Keyword: cbi probe | sleeping 0.65 minutes
+2026-01-22 21:32:37,455 | INFO | AdverseMediaPipeline | cbi probe → fetched 68 records
+2026-01-22 21:32:37,456 | INFO | AdverseMediaPipeline | Keyword: monero | sleeping 0.55 minutes
+2026-01-22 21:32:52,721 | INFO | AdverseMediaPipeline | monero → fetched 0 records
+2026-01-22 21:32:52,721 | INFO | AdverseMediaPipeline | Keyword: central bureau of investigation | sleeping 1.45 minutes
+2026-01-22 21:33:41,778 | INFO | AdverseMediaPipeline | central bureau of investigation → fetched 163 records
+2026-01-22 21:33:41,779 | INFO | AdverseMediaPipeline | Keyword: pump and dump | sleeping 1.42 minutes
+2026-01-22 21:33:52,365 | INFO | AdverseMediaPipeline | pump and dump → fetched 0 records
+2026-01-22 21:33:52,365 | INFO | AdverseMediaPipeline | Keyword: illegal mining | sleeping 0.78 minutes
+2026-01-22 21:34:07,340 | INFO | AdverseMediaPipeline | illegal mining → fetched 48 records
+2026-01-22 21:34:07,341 | INFO | AdverseMediaPipeline | Keyword: bribery | sleeping 0.93 minutes
+2026-01-22 21:34:24,524 | INFO | AdverseMediaPipeline | bribery → fetched 40 records
+2026-01-22 21:34:24,525 | INFO | AdverseMediaPipeline | Keyword: politically exposed person | sleeping 0.55 minutes
+2026-01-22 21:34:27,134 | ERROR | AdverseMediaPipeline | Failed fetching keyword: politically exposed person
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 167, in _query
+    raise_response_error(response=response)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/errors.py", line 44, in raise_response_error
+    raise RateLimitError(response=response)
+gdeltdoc.errors.RateLimitError
+2026-01-22 21:34:27,137 | INFO | AdverseMediaPipeline | Keyword: racket | sleeping 1.28 minutes
+2026-01-22 21:34:29,640 | ERROR | AdverseMediaPipeline | Failed fetching keyword: racket
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 167, in _query
+    raise_response_error(response=response)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/errors.py", line 44, in raise_response_error
+    raise RateLimitError(response=response)
+gdeltdoc.errors.RateLimitError
+2026-01-22 21:34:29,643 | INFO | AdverseMediaPipeline | Keyword: placement | sleeping 1.12 minutes
+2026-01-22 21:34:52,683 | INFO | AdverseMediaPipeline | placement → fetched 40 records
+2026-01-22 21:34:52,683 | INFO | AdverseMediaPipeline | Keyword: visa overstaying | sleeping 1.37 minutes
+2026-01-22 21:34:55,778 | INFO | AdverseMediaPipeline | visa overstaying → fetched 0 records
+2026-01-22 21:34:55,779 | INFO | AdverseMediaPipeline | Keyword: fake currency | sleeping 0.78 minutes
+2026-01-22 21:35:01,519 | INFO | AdverseMediaPipeline | fake currency → fetched 7 records
+2026-01-22 21:35:01,520 | INFO | AdverseMediaPipeline | Keyword: panama papers | sleeping 0.93 minutes
+2026-01-22 21:35:30,316 | INFO | AdverseMediaPipeline | panama papers → fetched 2 records
+2026-01-22 21:35:30,316 | INFO | AdverseMediaPipeline | Keyword: minister | sleeping 1.18 minutes
+2026-01-22 21:35:57,226 | INFO | AdverseMediaPipeline | minister → fetched 250 records
+2026-01-22 21:35:57,227 | INFO | AdverseMediaPipeline | Keyword: suspicious transaction | sleeping 0.57 minutes
+2026-01-22 21:36:08,707 | INFO | AdverseMediaPipeline | suspicious transaction → fetched 0 records
+2026-01-22 21:36:08,708 | INFO | AdverseMediaPipeline | Keyword: extortion | sleeping 0.78 minutes
+2026-01-22 21:36:22,564 | INFO | AdverseMediaPipeline | extortion → fetched 125 records
+2026-01-22 21:36:22,565 | INFO | AdverseMediaPipeline | Keyword: ponzi scheme | sleeping 0.63 minutes
+2026-01-22 21:36:34,796 | INFO | AdverseMediaPipeline | ponzi scheme → fetched 1 records
+2026-01-22 21:36:34,797 | INFO | AdverseMediaPipeline | Keyword: cyber fraud | sleeping 1.2 minutes
+2026-01-22 21:36:40,758 | INFO | AdverseMediaPipeline | cyber fraud → fetched 44 records
+2026-01-22 21:36:40,759 | INFO | AdverseMediaPipeline | Keyword: benami transactions | sleeping 0.72 minutes
+2026-01-22 21:36:47,803 | INFO | AdverseMediaPipeline | benami transactions → fetched 2 records
+2026-01-22 21:36:47,803 | INFO | AdverseMediaPipeline | Keyword: duped | sleeping 0.83 minutes
+2026-01-22 21:42:54,833 | INFO | AdverseMediaPipeline | ========== PIPELINE STARTED ==========
+2026-01-22 21:42:54,833 | INFO | AdverseMediaPipeline | Starting article fetch for 122 keywords
+2026-01-22 21:42:54,842 | INFO | AdverseMediaPipeline | Keyword: trafficking | sleeping 0.63 minutes
+2026-01-22 21:43:04,201 | INFO | AdverseMediaPipeline | trafficking → fetched 225 records
+2026-01-22 21:43:04,202 | INFO | AdverseMediaPipeline | Keyword: modern slavery | sleeping 1.05 minutes
+2026-01-22 21:43:12,162 | INFO | AdverseMediaPipeline | modern slavery → fetched 2 records
+2026-01-22 21:43:12,162 | INFO | AdverseMediaPipeline | Keyword: property seizuremisinvoicing | sleeping 1.28 minutes
+2026-01-22 21:43:19,103 | INFO | AdverseMediaPipeline | property seizuremisinvoicing → fetched 0 records
+2026-01-22 21:43:19,103 | INFO | AdverseMediaPipeline | Keyword: sanctioned entity | sleeping 0.57 minutes
+2026-01-22 21:43:28,484 | INFO | AdverseMediaPipeline | sanctioned entity → fetched 1 records
+2026-01-22 21:43:28,485 | INFO | AdverseMediaPipeline | Keyword: terrorist financing | sleeping 1.33 minutes
+2026-01-22 21:43:32,197 | INFO | AdverseMediaPipeline | terrorist financing → fetched 8 records
+2026-01-22 21:43:32,198 | INFO | AdverseMediaPipeline | Keyword: economic sanctions | sleeping 0.5 minutes
+2026-01-22 21:43:48,435 | INFO | AdverseMediaPipeline | economic sanctions → fetched 27 records
+2026-01-22 21:43:48,436 | INFO | AdverseMediaPipeline | Keyword: fatf black list | sleeping 1.33 minutes
+2026-01-22 21:44:01,545 | INFO | AdverseMediaPipeline | fatf black list → fetched 2 records
+2026-01-22 21:44:01,546 | INFO | AdverseMediaPipeline | Keyword: identity theft | sleeping 0.85 minutes
+2026-01-22 21:44:12,696 | INFO | AdverseMediaPipeline | identity theft → fetched 17 records
+2026-01-22 21:44:12,697 | INFO | AdverseMediaPipeline | Keyword: denied persons list | sleeping 1.5 minutes
+2026-01-22 21:44:24,476 | INFO | AdverseMediaPipeline | denied persons list → fetched 0 records
+2026-01-22 21:44:24,477 | INFO | AdverseMediaPipeline | Keyword: kickbacks | sleeping 0.9 minutes
+2026-01-22 21:44:30,266 | INFO | AdverseMediaPipeline | kickbacks → fetched 7 records
+2026-01-22 21:44:30,267 | INFO | AdverseMediaPipeline | Keyword: shell company | sleeping 0.98 minutes
+2026-01-22 21:44:34,474 | INFO | AdverseMediaPipeline | shell company → fetched 2 records
+2026-01-22 21:44:34,475 | INFO | AdverseMediaPipeline | Keyword: politically exposed person | sleeping 0.77 minutes
+2026-01-22 21:44:36,983 | INFO | AdverseMediaPipeline | politically exposed person → fetched 3 records
+2026-01-22 21:44:36,984 | INFO | AdverseMediaPipeline | Keyword: enforcement directorate | sleeping 0.88 minutes
+2026-01-22 21:44:50,450 | INFO | AdverseMediaPipeline | enforcement directorate → fetched 126 records
+2026-01-22 21:44:50,451 | INFO | AdverseMediaPipeline | Keyword: front organizations | sleeping 0.9 minutes
+2026-01-22 21:44:53,709 | INFO | AdverseMediaPipeline | front organizations → fetched 0 records
+2026-01-22 21:44:53,710 | INFO | AdverseMediaPipeline | Keyword: accounts frozen | sleeping 1.27 minutes
+2026-01-22 21:44:58,423 | INFO | AdverseMediaPipeline | accounts frozen → fetched 6 records
+2026-01-22 21:44:58,423 | INFO | AdverseMediaPipeline | Keyword: terror funding | sleeping 0.67 minutes
+2026-01-22 21:45:18,484 | INFO | AdverseMediaPipeline | terror funding → fetched 11 records
+2026-01-22 21:45:18,484 | INFO | AdverseMediaPipeline | Keyword: bureaucrat | sleeping 0.77 minutes
+2026-01-22 21:45:27,439 | INFO | AdverseMediaPipeline | bureaucrat → fetched 30 records
+2026-01-22 21:45:27,440 | INFO | AdverseMediaPipeline | Keyword: cryptocurrency laundering | sleeping 1.13 minutes
+2026-01-22 21:45:45,482 | INFO | AdverseMediaPipeline | cryptocurrency laundering → fetched 0 records
+2026-01-22 21:45:45,483 | INFO | AdverseMediaPipeline | Keyword: national investigation agency | sleeping 0.97 minutes
+2026-01-22 21:45:55,982 | INFO | AdverseMediaPipeline | national investigation agency → fetched 130 records
+2026-01-22 21:45:55,983 | INFO | AdverseMediaPipeline | Keyword: cryptocurrency | sleeping 1.35 minutes
+2026-01-22 21:46:21,678 | INFO | AdverseMediaPipeline | cryptocurrency → fetched 71 records
+2026-01-22 21:46:21,679 | INFO | AdverseMediaPipeline | Keyword: black marketing | sleeping 0.87 minutes
+2026-01-22 21:46:30,278 | INFO | AdverseMediaPipeline | black marketing → fetched 2 records
+2026-01-22 21:46:30,279 | INFO | AdverseMediaPipeline | Keyword: over-invoicing | sleeping 1.42 minutes
+2026-01-22 21:46:39,504 | INFO | AdverseMediaPipeline | over-invoicing → fetched 0 records
+2026-01-22 21:46:39,505 | INFO | AdverseMediaPipeline | Keyword: insurance fraud | sleeping 1.35 minutes
+2026-01-22 21:46:45,707 | INFO | AdverseMediaPipeline | insurance fraud → fetched 2 records
+2026-01-22 21:46:45,708 | INFO | AdverseMediaPipeline | Keyword: tax evasion | sleeping 0.98 minutes
+2026-01-22 21:46:58,758 | INFO | AdverseMediaPipeline | tax evasion → fetched 29 records
+2026-01-22 21:46:58,759 | INFO | AdverseMediaPipeline | Keyword: dark web | sleeping 1.38 minutes
+2026-01-22 21:47:10,711 | INFO | AdverseMediaPipeline | dark web → fetched 6 records
+2026-01-22 21:47:10,712 | INFO | AdverseMediaPipeline | Keyword: illegal mining | sleeping 0.87 minutes
+2026-01-22 21:47:19,746 | INFO | AdverseMediaPipeline | illegal mining → fetched 48 records
+2026-01-22 21:47:19,747 | INFO | AdverseMediaPipeline | Keyword: financial fraud | sleeping 0.77 minutes
+2026-01-22 21:47:28,033 | INFO | AdverseMediaPipeline | financial fraud → fetched 41 records
+2026-01-22 21:47:28,034 | INFO | AdverseMediaPipeline | Keyword: input tax credit fraud | sleeping 0.9 minutes
+2026-01-22 21:47:36,595 | INFO | AdverseMediaPipeline | input tax credit fraud → fetched 0 records
+2026-01-22 21:47:36,595 | INFO | AdverseMediaPipeline | Keyword: phishing | sleeping 1.42 minutes
+2026-01-22 21:47:41,785 | INFO | AdverseMediaPipeline | phishing → fetched 33 records
+2026-01-22 21:47:41,786 | INFO | AdverseMediaPipeline | Keyword: kashmir separatist | sleeping 1.07 minutes
+2026-01-22 21:47:44,995 | INFO | AdverseMediaPipeline | kashmir separatist → fetched 0 records
+2026-01-22 21:47:44,995 | INFO | AdverseMediaPipeline | Keyword: deepfake fraud | sleeping 0.72 minutes
+2026-01-22 21:47:55,448 | INFO | AdverseMediaPipeline | deepfake fraud → fetched 1 records
+2026-01-22 21:47:55,448 | INFO | AdverseMediaPipeline | Keyword: integration | sleeping 0.6 minutes
+2026-01-22 21:48:12,829 | INFO | AdverseMediaPipeline | integration → fetched 130 records
+2026-01-22 21:48:12,829 | INFO | AdverseMediaPipeline | Keyword: poaching | sleeping 1.1 minutes
+2026-01-22 21:48:16,667 | INFO | AdverseMediaPipeline | poaching → fetched 19 records
+2026-01-22 21:48:16,668 | INFO | AdverseMediaPipeline | Keyword: cross-border terror funding | sleeping 1.03 minutes
+2026-01-22 21:48:22,610 | INFO | AdverseMediaPipeline | cross-border terror funding → fetched 0 records
+2026-01-22 21:48:22,610 | INFO | AdverseMediaPipeline | Keyword: fraud | sleeping 1.28 minutes
+2026-01-22 21:48:26,877 | INFO | AdverseMediaPipeline | fraud → fetched 250 records
+2026-01-22 21:48:26,878 | INFO | AdverseMediaPipeline | Keyword: underworld | sleeping 0.75 minutes
+2026-01-22 21:48:30,504 | INFO | AdverseMediaPipeline | underworld → fetched 37 records
+2026-01-22 21:48:30,505 | INFO | AdverseMediaPipeline | Keyword: offshore accounts | sleeping 0.93 minutes
+2026-01-22 21:48:33,965 | INFO | AdverseMediaPipeline | offshore accounts → fetched 0 records
+2026-01-22 21:48:33,965 | INFO | AdverseMediaPipeline | Keyword: robbery | sleeping 0.52 minutes
+2026-01-22 21:48:37,962 | INFO | AdverseMediaPipeline | robbery → fetched 88 records
+2026-01-22 21:48:37,963 | INFO | AdverseMediaPipeline | Keyword: assets seized | sleeping 0.53 minutes
+2026-01-22 21:48:39,944 | INFO | AdverseMediaPipeline | assets seized → fetched 1 records
+2026-01-22 21:48:39,945 | INFO | AdverseMediaPipeline | Keyword: securities exchange board of india | sleeping 1.42 minutes
+2026-01-22 21:48:44,006 | INFO | AdverseMediaPipeline | securities exchange board of india → fetched 52 records
+2026-01-22 21:48:44,006 | INFO | AdverseMediaPipeline | Keyword: kidnap | sleeping 0.98 minutes
+2026-01-22 21:48:50,280 | INFO | AdverseMediaPipeline | kidnap → fetched 18 records
+2026-01-22 21:48:50,280 | INFO | AdverseMediaPipeline | Keyword: round-tripping | sleeping 1.23 minutes
+2026-01-22 21:48:53,188 | INFO | AdverseMediaPipeline | round-tripping → fetched 5 records
+2026-01-22 21:48:53,189 | INFO | AdverseMediaPipeline | Keyword: sanctions list | sleeping 1.22 minutes
+2026-01-22 21:49:04,448 | INFO | AdverseMediaPipeline | sanctions list → fetched 8 records
+2026-01-22 21:49:04,449 | INFO | AdverseMediaPipeline | Keyword: money laundering | sleeping 0.97 minutes
+2026-01-22 21:49:09,672 | INFO | AdverseMediaPipeline | money laundering → fetched 181 records
+2026-01-22 21:49:09,673 | INFO | AdverseMediaPipeline | Keyword: mixer | sleeping 0.93 minutes
+2026-01-22 21:49:12,856 | INFO | AdverseMediaPipeline | mixer → fetched 7 records
+2026-01-22 21:49:12,857 | INFO | AdverseMediaPipeline | Keyword: cash transaction | sleeping 1.0 minutes
+2026-01-22 21:49:16,048 | INFO | AdverseMediaPipeline | cash transaction → fetched 2 records
+2026-01-22 21:49:16,049 | INFO | AdverseMediaPipeline | Keyword: abuse of office | sleeping 0.88 minutes
+2026-01-22 21:49:24,671 | INFO | AdverseMediaPipeline | abuse of office → fetched 1 records
+2026-01-22 21:49:24,672 | INFO | AdverseMediaPipeline | Keyword: insider trading | sleeping 1.42 minutes
+2026-01-22 21:49:29,391 | INFO | AdverseMediaPipeline | insider trading → fetched 17 records
+2026-01-22 21:49:29,391 | INFO | AdverseMediaPipeline | Keyword: extortion | sleeping 1.22 minutes
+2026-01-22 21:49:35,874 | INFO | AdverseMediaPipeline | extortion → fetched 125 records
+2026-01-22 21:49:35,875 | INFO | AdverseMediaPipeline | Keyword: layering | sleeping 1.35 minutes
+2026-01-22 21:49:41,843 | INFO | AdverseMediaPipeline | layering → fetched 9 records
+2026-01-22 21:49:41,844 | INFO | AdverseMediaPipeline | Keyword: forge | sleeping 1.2 minutes
+2026-01-22 21:49:44,680 | INFO | AdverseMediaPipeline | forge → fetched 23 records
+2026-01-22 21:49:44,681 | INFO | AdverseMediaPipeline | Keyword: reserve bank of india | sleeping 0.9 minutes
+2026-01-22 21:49:50,749 | INFO | AdverseMediaPipeline | reserve bank of india → fetched 224 records
+2026-01-22 21:49:50,749 | INFO | AdverseMediaPipeline | Keyword: crypto | sleeping 1.18 minutes
+2026-01-22 21:49:54,639 | INFO | AdverseMediaPipeline | crypto → fetched 81 records
+2026-01-22 21:49:54,640 | INFO | AdverseMediaPipeline | Keyword: monero | sleeping 0.75 minutes
+2026-01-22 21:50:02,905 | INFO | AdverseMediaPipeline | monero → fetched 0 records
+2026-01-22 21:50:02,906 | INFO | AdverseMediaPipeline | Keyword: human trafficking | sleeping 1.5 minutes
+2026-01-22 21:50:14,110 | INFO | AdverseMediaPipeline | human trafficking → fetched 29 records
+2026-01-22 21:50:14,111 | INFO | AdverseMediaPipeline | Keyword: wildlife trafficking | sleeping 1.5 minutes
+2026-01-22 21:50:25,589 | INFO | AdverseMediaPipeline | wildlife trafficking → fetched 1 records
+2026-01-22 21:50:25,589 | INFO | AdverseMediaPipeline | Keyword: trade-based money laundering | sleeping 1.23 minutes
+2026-01-22 21:50:29,174 | INFO | AdverseMediaPipeline | trade-based money laundering → fetched 1 records
+2026-01-22 21:50:29,175 | INFO | AdverseMediaPipeline | Keyword: sanctions evasion | sleeping 0.68 minutes
+2026-01-22 21:50:38,193 | INFO | AdverseMediaPipeline | sanctions evasion → fetched 21 records
+2026-01-22 21:50:38,194 | INFO | AdverseMediaPipeline | Keyword: narcotics control bureau | sleeping 1.13 minutes
+2026-01-22 21:50:45,354 | INFO | AdverseMediaPipeline | narcotics control bureau → fetched 13 records
+2026-01-22 21:50:45,355 | INFO | AdverseMediaPipeline | Keyword: lawmaker | sleeping 1.4 minutes
+2026-01-22 21:50:58,197 | INFO | AdverseMediaPipeline | lawmaker → fetched 75 records
+2026-01-22 21:50:58,197 | INFO | AdverseMediaPipeline | Keyword: bribe | sleeping 1.48 minutes
+2026-01-22 21:51:09,229 | INFO | AdverseMediaPipeline | bribe → fetched 108 records
+2026-01-22 21:51:09,230 | INFO | AdverseMediaPipeline | Keyword: cybercrime | sleeping 1.47 minutes
+2026-01-22 21:51:19,796 | INFO | AdverseMediaPipeline | cybercrime → fetched 87 records
+2026-01-22 21:51:19,796 | INFO | AdverseMediaPipeline | Keyword: racket | sleeping 1.32 minutes
+2026-01-22 21:51:23,565 | INFO | AdverseMediaPipeline | racket → fetched 143 records
+2026-01-22 21:51:23,567 | INFO | AdverseMediaPipeline | Keyword: cross-border remittance | sleeping 0.87 minutes
+2026-01-22 21:51:27,443 | INFO | AdverseMediaPipeline | cross-border remittance → fetched 0 records
+2026-01-22 21:51:27,444 | INFO | AdverseMediaPipeline | Keyword: goods and service tax | sleeping 1.0 minutes
+2026-01-22 21:51:37,923 | INFO | AdverseMediaPipeline | goods and service tax → fetched 10 records
+2026-01-22 21:51:37,924 | INFO | AdverseMediaPipeline | Keyword: duped | sleeping 0.95 minutes
+2026-01-22 21:51:54,667 | INFO | AdverseMediaPipeline | duped → fetched 77 records
+2026-01-22 21:51:54,668 | INFO | AdverseMediaPipeline | Keyword: underinvoicing | sleeping 0.65 minutes
+2026-01-22 21:51:58,633 | INFO | AdverseMediaPipeline | underinvoicing → fetched 0 records
+2026-01-22 21:51:58,634 | INFO | AdverseMediaPipeline | Keyword: income tax department | sleeping 1.37 minutes
+2026-01-22 21:52:05,304 | INFO | AdverseMediaPipeline | income tax department → fetched 54 records
+2026-01-22 21:52:05,305 | INFO | AdverseMediaPipeline | Keyword: cyber police | sleeping 0.9 minutes
+2026-01-22 21:52:12,315 | INFO | AdverseMediaPipeline | cyber police → fetched 43 records
+2026-01-22 21:52:12,315 | INFO | AdverseMediaPipeline | Keyword: fake currency | sleeping 0.68 minutes
+2026-01-22 21:52:16,001 | INFO | AdverseMediaPipeline | fake currency → fetched 7 records
+2026-01-22 21:52:16,002 | INFO | AdverseMediaPipeline | Keyword: benami transactions | sleeping 0.58 minutes
+2026-01-22 21:52:18,133 | INFO | AdverseMediaPipeline | benami transactions → fetched 2 records
+2026-01-22 21:52:18,134 | INFO | AdverseMediaPipeline | Keyword: corruption | sleeping 0.98 minutes
+2026-01-22 21:52:21,673 | INFO | AdverseMediaPipeline | corruption → fetched 250 records
+2026-01-22 21:52:21,674 | INFO | AdverseMediaPipeline | Keyword: arms embargo | sleeping 0.62 minutes
+2026-01-22 21:52:25,672 | INFO | AdverseMediaPipeline | arms embargo → fetched 18 records
+2026-01-22 21:52:25,673 | INFO | AdverseMediaPipeline | Keyword: organized crime | sleeping 0.67 minutes
+2026-01-22 21:52:29,514 | INFO | AdverseMediaPipeline | organized crime → fetched 19 records
+2026-01-22 21:52:29,515 | INFO | AdverseMediaPipeline | Keyword: syndicategold smuggling | sleeping 1.28 minutes
+2026-01-22 21:52:40,263 | INFO | AdverseMediaPipeline | syndicategold smuggling → fetched 0 records
+2026-01-22 21:52:40,264 | INFO | AdverseMediaPipeline | Keyword: illegal conversion | sleeping 0.62 minutes
+2026-01-22 21:52:45,242 | INFO | AdverseMediaPipeline | illegal conversion → fetched 0 records
+2026-01-22 21:52:45,243 | INFO | AdverseMediaPipeline | Keyword: charity misuse | sleeping 0.82 minutes
+2026-01-22 21:52:49,967 | INFO | AdverseMediaPipeline | charity misuse → fetched 0 records
+2026-01-22 21:52:49,969 | INFO | AdverseMediaPipeline | Keyword: arrested | sleeping 1.33 minutes
+2026-01-22 21:52:55,510 | INFO | AdverseMediaPipeline | arrested → fetched 250 records
+2026-01-22 21:52:55,511 | INFO | AdverseMediaPipeline | Keyword: black money | sleeping 1.37 minutes
+2026-01-22 21:53:06,224 | INFO | AdverseMediaPipeline | black money → fetched 20 records
+2026-01-22 21:53:06,224 | INFO | AdverseMediaPipeline | Keyword: panama papers | sleeping 1.27 minutes
+2026-01-22 21:53:14,376 | INFO | AdverseMediaPipeline | panama papers → fetched 2 records
+2026-01-22 21:53:14,377 | INFO | AdverseMediaPipeline | Keyword: investigation launched | sleeping 0.6 minutes
+2026-01-22 21:53:16,998 | INFO | AdverseMediaPipeline | investigation launched → fetched 26 records
+2026-01-22 21:53:17,000 | INFO | AdverseMediaPipeline | Keyword: ponzi scheme | sleeping 0.92 minutes
+2026-01-22 21:53:19,976 | INFO | AdverseMediaPipeline | ponzi scheme → fetched 1 records
+2026-01-22 21:53:19,977 | INFO | AdverseMediaPipeline | Keyword: visa overstaying | sleeping 1.45 minutes
+2026-01-22 21:53:27,377 | INFO | AdverseMediaPipeline | visa overstaying → fetched 0 records
+2026-01-22 21:53:27,378 | INFO | AdverseMediaPipeline | Keyword: cyber fraud | sleeping 0.68 minutes
+2026-01-22 21:53:33,982 | INFO | AdverseMediaPipeline | cyber fraud → fetched 44 records
+2026-01-22 21:53:33,983 | INFO | AdverseMediaPipeline | Keyword: online fraud | sleeping 1.08 minutes
+2026-01-22 21:53:38,668 | INFO | AdverseMediaPipeline | online fraud → fetched 10 records
+2026-01-22 21:53:38,669 | INFO | AdverseMediaPipeline | Keyword: penalty insurance regulatory and development authority | sleeping 0.83 minutes
+2026-01-22 21:53:45,031 | INFO | AdverseMediaPipeline | penalty insurance regulatory and development authority → fetched 0 records
+2026-01-22 21:53:45,032 | INFO | AdverseMediaPipeline | Keyword: privacy coins | sleeping 1.15 minutes
+2026-01-22 21:54:01,611 | INFO | AdverseMediaPipeline | privacy coins → fetched 0 records
+2026-01-22 21:54:01,611 | INFO | AdverseMediaPipeline | Keyword: market manipulation | sleeping 1.28 minutes
+2026-01-22 21:54:11,722 | INFO | AdverseMediaPipeline | market manipulation → fetched 2 records
+2026-01-22 21:54:11,723 | INFO | AdverseMediaPipeline | Keyword: real estate laundering | sleeping 1.45 minutes
+2026-01-22 21:54:16,838 | INFO | AdverseMediaPipeline | real estate laundering → fetched 0 records
+2026-01-22 21:54:16,839 | INFO | AdverseMediaPipeline | Keyword: hawala | sleeping 0.92 minutes
+2026-01-22 21:54:18,638 | ERROR | AdverseMediaPipeline | Failed fetching keyword: hawala
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 167, in _query
+    raise_response_error(response=response)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/errors.py", line 44, in raise_response_error
+    raise RateLimitError(response=response)
+gdeltdoc.errors.RateLimitError
+2026-01-22 21:54:18,642 | INFO | AdverseMediaPipeline | Keyword: scam | sleeping 1.13 minutes
+2026-01-22 21:54:20,643 | ERROR | AdverseMediaPipeline | Failed fetching keyword: scam
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 167, in _query
+    raise_response_error(response=response)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/errors.py", line 44, in raise_response_error
+    raise RateLimitError(response=response)
+gdeltdoc.errors.RateLimitError
+2026-01-22 21:54:20,647 | INFO | AdverseMediaPipeline | Keyword: shell companies | sleeping 1.05 minutes
+2026-01-22 21:54:25,873 | INFO | AdverseMediaPipeline | shell companies → fetched 18 records
+2026-01-22 21:54:25,874 | INFO | AdverseMediaPipeline | Keyword: smuggle | sleeping 0.52 minutes
+2026-01-22 21:54:33,424 | INFO | AdverseMediaPipeline | smuggle → fetched 42 records
+2026-01-22 21:54:33,425 | INFO | AdverseMediaPipeline | Keyword: placement | sleeping 0.9 minutes
+2026-01-22 21:54:37,581 | INFO | AdverseMediaPipeline | placement → fetched 40 records
+2026-01-22 21:54:37,582 | INFO | AdverseMediaPipeline | Keyword: drug trafficking | sleeping 1.25 minutes
+2026-01-22 21:54:46,839 | INFO | AdverseMediaPipeline | drug trafficking → fetched 54 records
+2026-01-22 21:54:46,839 | INFO | AdverseMediaPipeline | Keyword: mafia | sleeping 0.5 minutes
+2026-01-22 21:54:57,377 | INFO | AdverseMediaPipeline | mafia → fetched 81 records
+2026-01-22 21:54:57,378 | INFO | AdverseMediaPipeline | Keyword: minister | sleeping 1.27 minutes
+2026-01-22 21:55:03,620 | INFO | AdverseMediaPipeline | minister → fetched 250 records
+2026-01-22 21:55:03,621 | INFO | AdverseMediaPipeline | Keyword: bank fraud | sleeping 0.97 minutes
+2026-01-22 21:55:10,237 | INFO | AdverseMediaPipeline | bank fraud → fetched 21 records
+2026-01-22 21:55:10,238 | INFO | AdverseMediaPipeline | Keyword: aml non-compliance | sleeping 0.8 minutes
+2026-01-22 21:55:16,928 | INFO | AdverseMediaPipeline | aml non-compliance → fetched 0 records
+2026-01-22 21:55:16,929 | INFO | AdverseMediaPipeline | Keyword: pyramid scheme | sleeping 1.25 minutes
+2026-01-22 21:55:21,487 | INFO | AdverseMediaPipeline | pyramid scheme → fetched 3 records
+2026-01-22 21:55:21,488 | INFO | AdverseMediaPipeline | Keyword: kyc violation | sleeping 1.28 minutes
+2026-01-22 21:55:25,735 | INFO | AdverseMediaPipeline | kyc violation → fetched 0 records
+2026-01-22 21:55:25,736 | INFO | AdverseMediaPipeline | Keyword: cheating | sleeping 0.7 minutes
+2026-01-22 21:55:33,197 | INFO | AdverseMediaPipeline | cheating → fetched 161 records
+2026-01-22 21:55:33,197 | INFO | AdverseMediaPipeline | Keyword: anti terror unit | sleeping 0.8 minutes
+2026-01-22 21:55:41,061 | INFO | AdverseMediaPipeline | anti terror unit → fetched 0 records
+2026-01-22 21:55:41,062 | INFO | AdverseMediaPipeline | Keyword: high-risk country | sleeping 0.68 minutes
+2026-01-22 21:55:45,900 | INFO | AdverseMediaPipeline | high-risk country → fetched 0 records
+2026-01-22 21:55:45,901 | INFO | AdverseMediaPipeline | Keyword: asset freeze | sleeping 1.3 minutes
+2026-01-22 21:55:49,771 | INFO | AdverseMediaPipeline | asset freeze → fetched 7 records
+2026-01-22 21:55:49,772 | INFO | AdverseMediaPipeline | Keyword: luxury asset purchase | sleeping 0.8 minutes
+2026-01-22 21:55:52,601 | INFO | AdverseMediaPipeline | luxury asset purchase → fetched 0 records
+2026-01-22 21:55:52,602 | INFO | AdverseMediaPipeline | Keyword: bribery | sleeping 0.75 minutes
+2026-01-22 21:55:56,075 | INFO | AdverseMediaPipeline | bribery → fetched 40 records
+2026-01-22 21:55:56,076 | INFO | AdverseMediaPipeline | Keyword: fatf grey list | sleeping 0.93 minutes
+2026-01-22 21:55:59,266 | INFO | AdverseMediaPipeline | fatf grey list → fetched 38 records
+2026-01-22 21:55:59,266 | INFO | AdverseMediaPipeline | Keyword: directorate of revenue intelligence | sleeping 1.3 minutes
+2026-01-22 21:56:07,713 | INFO | AdverseMediaPipeline | directorate of revenue intelligence → fetched 20 records
+2026-01-22 21:56:07,714 | INFO | AdverseMediaPipeline | Keyword: anti terrorist squad | sleeping 1.17 minutes
+2026-01-22 21:56:10,760 | INFO | AdverseMediaPipeline | anti terrorist squad → fetched 3 records
+2026-01-22 21:56:10,761 | INFO | AdverseMediaPipeline | Keyword: under-invoicing | sleeping 0.72 minutes
+2026-01-22 21:56:14,556 | INFO | AdverseMediaPipeline | under-invoicing → fetched 0 records
+2026-01-22 21:56:14,557 | INFO | AdverseMediaPipeline | Keyword: police special cell | sleeping 1.12 minutes
+2026-01-22 21:56:19,044 | INFO | AdverseMediaPipeline | police special cell → fetched 15 records
+2026-01-22 21:56:19,045 | INFO | AdverseMediaPipeline | Keyword: member of parliament | sleeping 1.3 minutes
+2026-01-22 21:56:26,865 | INFO | AdverseMediaPipeline | member of parliament → fetched 67 records
+2026-01-22 21:56:26,866 | INFO | AdverseMediaPipeline | Keyword: cbi probe | sleeping 0.6 minutes
+2026-01-22 21:56:29,677 | INFO | AdverseMediaPipeline | cbi probe → fetched 68 records
+2026-01-22 21:56:29,678 | INFO | AdverseMediaPipeline | Keyword: rug pull | sleeping 1.28 minutes
+2026-01-22 21:56:33,493 | INFO | AdverseMediaPipeline | rug pull → fetched 0 records
+2026-01-22 21:56:33,494 | INFO | AdverseMediaPipeline | Keyword: ransomware | sleeping 1.17 minutes
+2026-01-22 21:56:37,120 | INFO | AdverseMediaPipeline | ransomware → fetched 12 records
+2026-01-22 21:56:37,121 | INFO | AdverseMediaPipeline | Keyword: counterfeit currency | sleeping 1.4 minutes
+2026-01-22 21:56:45,249 | INFO | AdverseMediaPipeline | counterfeit currency → fetched 7 records
+2026-01-22 21:56:45,250 | INFO | AdverseMediaPipeline | Keyword: pump and dump | sleeping 1.43 minutes
+2026-01-22 21:56:48,461 | INFO | AdverseMediaPipeline | pump and dump → fetched 0 records
+2026-01-22 21:56:48,462 | INFO | AdverseMediaPipeline | Keyword: central bureau of investigation | sleeping 0.63 minutes
+2026-01-22 21:56:51,149 | INFO | AdverseMediaPipeline | central bureau of investigation → fetched 163 records
+2026-01-22 21:56:51,150 | INFO | AdverseMediaPipeline | Keyword: suspicious transaction | sleeping 0.6 minutes
+2026-01-22 21:56:56,236 | INFO | AdverseMediaPipeline | suspicious transaction → fetched 0 records
+2026-01-22 21:56:56,237 | INFO | AdverseMediaPipeline | Keyword: political donations | sleeping 1.38 minutes
+2026-01-22 21:57:00,686 | INFO | AdverseMediaPipeline | political donations → fetched 5 records
+2026-01-22 21:57:00,687 | INFO | AdverseMediaPipeline | Keyword: gang | sleeping 1.08 minutes
+2026-01-22 21:57:02,674 | ERROR | AdverseMediaPipeline | Failed fetching keyword: gang
+Traceback (most recent call last):
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 53, in fetch_all_articles
+    df = fetch_article_links(gd, start_date, end_date, keyword)
+  File "/Users/work/Tools and Automations/Gdelt_Scrapper/pipeline.py", line 38, in fetch_article_links
+    return gd.article_search(filters)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 80, in article_search
+    articles = self._query("artlist", filters.query_string)
+  File "/Users/work/Tools and Automations/am_venv/lib/python3.10/site-packages/gdeltdoc/api_client.py", line 174, in _query
+    raise ValueError(
+ValueError: The query was not valid. The API error message was: The specified phrase is too short.
+2026-01-22 21:57:02,676 | INFO | AdverseMediaPipeline | Article fetching completed
+2026-01-22 21:57:02,729 | INFO | AdverseMediaPipeline | Filtering allowed domains
+2026-01-22 21:57:02,733 | INFO | AdverseMediaPipeline | Remaining after domain filter: 1949
+2026-01-22 21:57:02,744 | INFO | AdverseMediaPipeline | Fetching article content for 1949 URLs
+2026-01-22 22:26:26,776 | WARNING | AdverseMediaPipeline | Failed article extraction: https://www.tribuneindia.com/news/haryana/gangster-injured-2-others-arrested-following-encounter-in-hisar/
+2026-01-22 22:34:19,338 | WARNING | AdverseMediaPipeline | Failed article extraction: https://www.freepressjournal.in/analysis/bold-steps-by-an-emboldened-rbi
+2026-01-22 22:45:48,199 | WARNING | AdverseMediaPipeline | Failed article extraction: https://www.freepressjournal.in/education/cet-exams-to-be-held-only-in-maharashtra-from-next-year-to-curb-malpractices-minister-chandrakant-patil
+2026-01-22 22:52:39,523 | WARNING | AdverseMediaPipeline | Failed article extraction: https://www.tribuneindia.com/news/punjab/aap-legislator-raman-arora-sent-to-14-day-judicial-custody-in-graft-case/
+2026-01-22 23:03:46,865 | WARNING | AdverseMediaPipeline | Failed article extraction: https://www.freepressjournal.in/bhopal/from-rajasthan-to-bhopal-peddlers-uncover-new-routes-to-sneak-in-smack
+2026-01-22 23:24:34,286 | INFO | AdverseMediaPipeline | Successfully extracted 1944 articles
+2026-01-22 23:27:54,116 | INFO | AdverseMediaPipeline | Extracting article keywords
+2026-01-22 23:27:54,875 | INFO | AdverseMediaPipeline | storing fetched article for June_2025 to database
